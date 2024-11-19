@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewcontroller.EmpleadoClViewController">
+   <children>
+      <Label layoutX="220.0" layoutY="30.0" text="Control General">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="105.0" text="Registrar Cliente">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="142.0" text="Cedula:" />
+      <Label layoutX="54.0" layoutY="176.0" text="Nombre:" />
+      <Label layoutX="53.0" layoutY="215.0" text="Telefono:" />
+      <Label layoutX="58.0" layoutY="253.0" text="Correo:" />
+      <Label layoutX="56.0" layoutY="288.0" text="Usuario:" />
+      <Label layoutX="62.0" layoutY="328.0" text="Clave:" />
+      <TextField fx:id="txt_cedulaCl" layoutX="110.0" layoutY="138.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_nombreCl" layoutX="110.0" layoutY="172.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_telefonoCl" layoutX="110.0" layoutY="211.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_correoCl" layoutX="110.0" layoutY="249.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_usuarioCl" layoutX="110.0" layoutY="284.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_claveCl" layoutX="110.0" layoutY="324.0" prefHeight="25.0" prefWidth="104.0" />
+      <Button fx:id="bt_registrarCliente" layoutX="65.0" layoutY="369.0" mnemonicParsing="false" onAction="#onAgregarCliente" text="Registrar" />
+      <Button fx:id="bt_registrarTransaccion" layoutX="408.0" layoutY="369.0" mnemonicParsing="false" onAction="#onAgregarTransaccion" text="Registrar" />
+      <Label layoutX="371.0" layoutY="105.0" prefHeight="20.0" prefWidth="149.0" text="Registro transacciones">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="142.0" text="Vehiculo:" />
+      <Label layoutX="330.0" layoutY="176.0" text="Cliente:" />
+      <Label layoutX="322.0" layoutY="215.0" text="Empleado:" />
+      <Label layoutX="333.0" layoutY="253.0" text="Fecha:" />
+      <TextField fx:id="txt_vehiculo" layoutX="397.0" layoutY="138.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="txt_cliente" layoutX="397.0" layoutY="172.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="txt_empleado" layoutX="397.0" layoutY="211.0" prefHeight="25.0" prefWidth="125.0" />
+      <TextField fx:id="txt_fechaTr" layoutX="397.0" layoutY="249.0" prefHeight="25.0" prefWidth="125.0" />
+      <ComboBox fx:id="cbx_tipoTransaccion" layoutX="350.0" layoutY="297.0" prefWidth="150.0" promptText="Tipo de Transaccion" />
+      <TableView fx:id="tb_clientes" layoutX="12.0" layoutY="412.0" prefHeight="141.0" prefWidth="257.0">
+        <columns>
+          <TableColumn fx:id="tbc_cedula" prefWidth="75.0" text="NOMBRE" />
+          <TableColumn fx:id="tbc_nombre" prefWidth="81.0" text="CEDULA" />
+            <TableColumn fx:id="tbc_telefono" prefWidth="100.0" text="TELEFONO" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tb_transacciones" layoutX="288.0" layoutY="412.0" prefHeight="141.0" prefWidth="298.0">
+        <columns>
+          <TableColumn fx:id="tbc_vehiculo" prefWidth="75.0" text="VEHICULO" />
+          <TableColumn fx:id="tbc_cliente" prefWidth="75.0" text="CLIENTE " />
+            <TableColumn fx:id="tbc_empleado" prefWidth="75.0" text="EMPLEADO" />
+            <TableColumn fx:id="tbc_tipoTransaccion" prefWidth="75.0" text="TIPO" />
+        </columns>
+      </TableView>
+      <Button fx:id="bt_eliminar" layoutX="162.0" layoutY="369.0" mnemonicParsing="false" onAction="#onEliminarCliente" text="Eliminar" />
+   </children>
+</Pane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewcontroller.EmpleadoAtViewController">
+   <children>
+      <ComboBox fx:id="cbx_tipovehiculo" layoutX="24.0" layoutY="212.0" prefHeight="25.0" prefWidth="156.0" promptText="Tipo de vehiculo" />
+      <Label layoutX="268.0" layoutY="25.0" text="Control de Vehiculos">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="74.0" text="Codigo:" />
+      <Label layoutX="61.0" layoutY="113.0" text="Marca:" />
+      <Label layoutX="48.0" layoutY="154.0" text="N Cambios:" />
+      <Label layoutX="268.0" layoutY="74.0" text="Vel. MAxima:" />
+      <Label layoutX="280.0" layoutY="113.0" text="Modelo:" />
+      <Label layoutX="280.0" layoutY="154.0" text="Cilindraje:" />
+      <Label layoutX="517.0" layoutY="74.0" text="Estado:" />
+      <Label layoutX="513.0" layoutY="113.0" text="Registro:" />
+      <Label layoutX="503.0" layoutY="154.0" text="Transmision:" />
+      <TextField fx:id="txt_codVehivulo" layoutX="102.0" layoutY="70.0" />
+      <TextField fx:id="txt_velMax" layoutX="343.0" layoutY="70.0" />
+      <TextField fx:id="txt_estado" layoutX="562.0" layoutY="70.0" />
+      <TextField fx:id="txt_marca" layoutX="102.0" layoutY="109.0" />
+      <TextField fx:id="txt_nCambios" layoutX="119.0" layoutY="150.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_modelo" layoutX="343.0" layoutY="109.0" />
+      <TextField fx:id="txt_cilindraje" layoutX="343.0" layoutY="150.0" />
+      <TextField fx:id="txt_registro" layoutX="569.0" layoutY="109.0" prefHeight="25.0" prefWidth="137.0" />
+      <TextField fx:id="txt_transmision" layoutX="580.0" layoutY="150.0" prefHeight="25.0" prefWidth="110.0" text="(Auto, Manual)" />
+      <Label layoutX="485.0" layoutY="224.0" text="N Pasajeros:" />
+      <Label layoutX="490.0" layoutY="258.0" text="N Puertas:" />
+      <Label layoutX="473.0" layoutY="292.0" text="N Bolsas de Aire:" />
+      <Label layoutX="481.0" layoutY="323.0" text="CapMaletero:" />
+      <Label layoutX="506.0" layoutY="357.0" text="A/C:" />
+      <Label layoutX="481.0" layoutY="511.0" text="Cam Reversa:" />
+      <Label layoutX="485.0" layoutY="483.0" text="Vel Crucero:" />
+      <Label layoutX="505.0" layoutY="579.0" text="ABS:" />
+      <Label layoutX="467.0" layoutY="389.0" text="Sensor de Colision:" />
+      <Label layoutX="453.0" layoutY="423.0" text="Sensor trafico cruzado:" />
+      <Label layoutX="447.0" layoutY="452.0" text="Asistente de permanencia:" />
+      <Label layoutX="506.0" layoutY="545.0" text="4x4:" />
+      <Label layoutX="229.0" layoutY="224.0" text="Caballos de Fuerza:" />
+      <Label layoutX="250.0" layoutY="258.0" text="0-100 kmh:" />
+      <Label layoutX="251.0" layoutY="292.0" text="Cap Carga:" />
+      <Label layoutX="262.0" layoutY="324.0" text="N Ejes:" />
+      <Label layoutX="244.0" layoutY="356.0" text="Freno de aire:" />
+      <Label layoutX="202.0" layoutY="389.0" text="N Salidas de Emergencia:" />
+      <TextField fx:id="txt_nPasajeros" layoutX="593.0" layoutY="220.0" prefHeight="17.0" prefWidth="89.0" />
+      <TextField fx:id="txt_nPuertas" layoutX="593.0" layoutY="254.0" prefHeight="10.0" prefWidth="89.0" />
+      <TextField fx:id="txt_nBolsas" layoutX="591.0" layoutY="288.0" prefHeight="0.0" prefWidth="89.0" />
+      <TextField fx:id="txt_capMaletero" layoutX="592.0" layoutY="319.0" prefHeight="25.0" prefWidth="89.0" />
+      <TextField fx:id="txt_ac" layoutX="592.0" layoutY="352.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_senColision" layoutX="593.0" layoutY="385.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_senCruzado" layoutX="593.0" layoutY="419.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_asiisP" layoutX="592.0" layoutY="448.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_velCrucero" layoutX="593.0" layoutY="479.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_camReversa" layoutX="593.0" layoutY="507.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_4x4" layoutX="593.0" layoutY="541.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_abs" layoutX="593.0" layoutY="575.0" prefHeight="25.0" prefWidth="89.0" text="(si/no)" />
+      <TextField fx:id="txt_cabFuerza" layoutX="337.0" layoutY="220.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_t0100" layoutX="337.0" layoutY="254.0" prefHeight="17.0" prefWidth="104.0" />
+      <TextField fx:id="txt_capCarga" layoutX="337.0" layoutY="288.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_nEjes" layoutX="337.0" layoutY="320.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField fx:id="txt_frenoAire" layoutX="337.0" layoutY="353.0" prefHeight="25.0" prefWidth="104.0" text="(si/no)" />
+      <TextField fx:id="txt_nSalidas" layoutX="345.0" layoutY="385.0" prefHeight="25.0" prefWidth="89.0" />
+      <TableView fx:id="tb_vehiculos" layoutX="9.0" layoutY="440.0" prefHeight="170.0" prefWidth="425.0">
+        <columns>
+          <TableColumn fx:id="tbc_codigo" prefWidth="85.0" text="CODIGO" />
+          <TableColumn fx:id="tbc_modelo" prefWidth="65.0" text="MODELO" />
+            <TableColumn fx:id="tbc_marca" prefWidth="89.0" text="MARCA" />
+            <TableColumn fx:id="tbc_estado" prefWidth="87.0" text="ESTADO" />
+            <TableColumn fx:id="tbc_registro" prefWidth="98.0" text="REGISTRO" />
+        </columns>
+      </TableView>
+      <Button fx:id="bt_registrar" layoutX="53.0" layoutY="329.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="133.0" text="Registrar" onAction="#onAgregarVehiculo">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

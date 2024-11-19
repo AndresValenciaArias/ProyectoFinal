@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewcontroller.LoginViewController">
+   <children>
+      <!-- Label con fuente ajustada -->
+      <Label layoutX="136.0" layoutY="56.0" prefHeight="54.0" prefWidth="328.0" text="Ingrese su Usuario" style="-fx-font-size: 37px; -fx-font-family: 'Arial';"/>
+      
+      <!-- TextFields sin font -->
+      <TextField fx:id="txt_tipoUsuario" layoutX="213.0" layoutY="182.0" promptText="(admin, empleado)" />
+      <TextField fx:id="txt_nombreUsuario" layoutX="212.0" layoutY="264.0" />
+
+      <!-- Label con fuente ajustada -->
+      <Label layoutX="223.0" layoutY="155.0" text="Tipo de usuario:" style="-fx-font-size: 18px; -fx-font-family: 'Arial';"/>
+      
+      <!-- Label con fuente ajustada -->
+      <Label layoutX="239.0" layoutY="316.0" text="Contraseña:" style="-fx-font-size: 18px; -fx-font-family: 'Arial';"/>
+      
+      <!-- Label con fuente ajustada -->
+      <Label layoutX="251.0" layoutY="230.0" text="Nombre:" style="-fx-font-size: 18px; -fx-font-family: 'Arial';"/>
+      
+      <!-- TextField sin font -->
+      <TextField fx:id="txt_contrasenaUsuario" layoutX="211.0" layoutY="343.0" />
+
+      <!-- Button con fuente ajustada -->
+      <Button fx:id="bt_ingresar" layoutX="248.0" layoutY="402.0" mnemonicParsing="false" text="Ingresar" onAction="#ingresar" style="-fx-font-size: 15px; -fx-font-family: 'Arial';"/>
+      <Label fx:id="labelError" layoutX="213.0" layoutY="440.0" prefWidth="328.0" text="" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: red;" visible="false" />
+   </children>
+</Pane>

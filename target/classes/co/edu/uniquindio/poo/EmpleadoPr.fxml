@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.poo.controller.PrincipalController">
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="btnAutos" text="Gestión de Autos" onAction="#mostrarAutos"/>
+            <Button fx:id="btnClientes" text="Gestión de Clientes" onAction="#mostrarClientes"/>
+        </HBox>
+    </top>
+    <center>
+        <StackPane fx:id="contenidoPane"/>
+    </center>
+</BorderPane>
